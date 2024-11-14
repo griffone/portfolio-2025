@@ -1,25 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("assets/fonts/Onest-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 html {
-    font-size: 62.5%; /* 1rem = 10px */
-    overflow: hidden;
-    scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
-    margin: 0;
-    padding: 0;
-    /* -- */
-    color: white;
+  font-family: "Onest", "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  /* -- */
+  color: white;
 }
 
 .bg-z-index-dark {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
-    // background: #171717 radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
-    background-color: #000;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  // background: #171717 radial-gradient(ellipse 80% 80% at 50% -20%, rgba(120, 119, 198, 0.3), rgba(255, 255, 255, 0));
+  background-color: #000;
 }
