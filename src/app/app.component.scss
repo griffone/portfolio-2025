@@ -203,3 +203,27 @@
     letter-spacing: .2px;
   }
 }
+
+.content-f {
+  .skills-content {
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .skill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: black;
+      padding: 7.5px 20px;
+      border-radius: 7.5px;
+      ng-icon {
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+      }
+      &:hover ng-icon {
+        filter: none;
+      }
+    }
+  }
+}

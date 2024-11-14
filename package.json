@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^17.2.0",
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/router": "^17.2.0",
+    "@ng-icons/core": "^29.9.0",
+    "@ng-icons/devicon": "^29.9.0",
     "rxjs": "~7.8.0",
     "swapy": "^0.4.2",
     "tslib": "^2.3.0",
