@@ -150,7 +150,7 @@
       margin-left: 10px;
     }
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 27px;
@@ -169,14 +169,14 @@
     margin: 0;
   }
   h2 {
-    color: #66A0E2;
+    color: #66a0e2;
     font-weight: 600;
     font-size: 2rem;
     padding-bottom: 10px;
     position: relative;
     // padding-left: 30px;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -32px;
       transform: translateY(1px);
@@ -200,7 +200,7 @@
   .description {
     font-size: 1.3rem;
     color: #bebebe;
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
   }
 }
 
@@ -217,12 +217,50 @@
       background-color: black;
       padding: 7.5px 20px;
       border-radius: 7.5px;
+      .icon-default,
+      .icon-hover {
+        transition: opacity 0.2s ease-in-out;
+        position: absolute;
+      }
+      .icon-default {
+        opacity: 1;
+      }
+      .icon-hover {
+        opacity: 0;
+      }
+      &:hover .icon-default {
+        opacity: 0;
+      }
+      &:hover .icon-hover {
+        opacity: 1;
+      }
+      span {
+        margin-left: 28px;
+      }
+    }
+    .skill#original {
       ng-icon {
         filter: brightness(0) invert(1);
         transition: filter 0.3s ease;
       }
       &:hover ng-icon {
         filter: none;
+      }
+    }
+    .skill#angular {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -1px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 1rem;
+        border: 2px solid transparent;
+        background: linear-gradient(#0b1028, #0b1028) padding-box,
+          linear-gradient(to right, #5384bb, #2d2655) border-box;
+        z-index: -1;
       }
     }
   }

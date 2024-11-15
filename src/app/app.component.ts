@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
-
+import { diAngularPlain } from '@ng-icons/devicon/plain';
 import { diAngularOriginal, diSpringOriginal } from '@ng-icons/devicon/original';
 import { createSwapy } from 'swapy';
 
@@ -11,7 +11,7 @@ import { createSwapy } from 'swapy';
   imports: [RouterOutlet, NgIconComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  viewProviders: [provideIcons({diSpringOriginal, diAngularOriginal})]
+  viewProviders: [provideIcons({diAngularPlain, diSpringOriginal, diAngularOriginal})]
 })
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
